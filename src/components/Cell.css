@@ -1,0 +1,33 @@
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #555;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .cell.revealed {
+    background-color: #ddd;
+    cursor: default;
+  }
+  
+  .cell:hover {
+    background-color: #bbb;
+  }
+  .game-status {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #4CAF50; /* Green for win */
+  }
+  
+  .game-status.loss {
+    color: #F44336; /* Red for loss */
+  }
+  
